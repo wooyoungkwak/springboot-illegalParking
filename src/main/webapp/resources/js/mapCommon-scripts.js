@@ -163,6 +163,10 @@ async function coordinatesToDongCodeKakaoApi(x, y, stat) {
     };
     const response = await fetch(URL, opt);
     const data = await response.json();
+
+    // "App(illegal-parking) disabled OPEN_MAP_AND_LOCAL service."  ???
+    console.log(data);
+
     data.documents.forEach(region => {
         if (region.region_type === 'B') code = region.code.substr(0, 8).concat('00');
     });

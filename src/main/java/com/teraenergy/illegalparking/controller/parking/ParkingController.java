@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
  * Author : young
  * Editor :
  * Project : illegalParking
- * Description :
+ * Description : 공영주차장 (parking)
  */
 @RequiredArgsConstructor
 @Controller

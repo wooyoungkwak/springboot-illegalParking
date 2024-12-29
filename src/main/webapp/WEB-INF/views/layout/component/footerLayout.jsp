@@ -12,7 +12,7 @@
         <div class="container-fluid px-4">
             <div class="d-flex align-items-center justify-content-between small">
                 <div class="text-muted">
-                    COPYRIGHT &copy; TERAENERGY INC. ALL RIGHTS RESERVED. ( <a href="http://teraenergy.co.kr/">teraenergy.co.kr</a> )
+                    COPYRIGHT &copy; YOUNG INC. ALL RIGHTS RESERVED. ( <a href="http://zilet.iptime.org:10002/">www.Nexus.com</a> )
                 </div>
                 <div>
 <%--                    <a href="#">Privacy Policy</a>--%>

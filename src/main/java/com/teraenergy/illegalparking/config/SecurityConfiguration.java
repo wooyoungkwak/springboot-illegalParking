@@ -1,5 +1,6 @@
 package com.teraenergy.illegalparking.config;
 
+import com.teraenergy.illegalparking.encrypt.YoungEncoder;
 import com.teraenergy.illegalparking.security.UserAuthFailureHandler;
 import com.teraenergy.illegalparking.security.UserAuthLogoutSuccessHandler;
 import com.teraenergy.illegalparking.security.UserAuthSuccessHandler;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
@@ -23,7 +25,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 @Slf4j
 @RequiredArgsConstructor
 @Configuration
-public class SecurityConfiguration  extends WebSecurityConfigurerAdapter {
+@EnableWebSecurity
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private final UserAuthSuccessHandler userAuthSuccessHandler;
 
@@ -40,6 +43,10 @@ public class SecurityConfiguration  extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity webSecurity) {
         log.info("security configure register [WebSecurity]");
         webSecurity.ignoring().antMatchers("/resources/**");
+
+//        YoungEncoder.decrypt("wV6u1vKFveRmu8fG546qdg==") -> admin1234
+//        log.info(" ****************  decrypte = " + YoungEncoder.decrypt("wV6u1vKFveRmu8fG546qdg=="));
+
     }
 
     @Override

@@ -54,7 +54,6 @@ spring:
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     url: jdbc:log4jdbc:mariadb://192.168.0.53:3306/illegal_parking_test?serverTimezone=Asia/Seoul
-    #    url: jdbc:mariadb://192.168.0.53:3306/illegal_parking?serverTimezone=Asia/Seoul
     username: root
     password:
     hikari:
@@ -66,7 +65,35 @@ spring:
       password:
       maximum-pool-size: 30
 server:
-  port: 8090
+  port: 8080
+  servlet:
+    context-path: /
+    session:
+      timeout: 300m
+file:
+  resourcePath: C:/fileUpload/
+---
+# debug2
+spring:
+  config:
+    activate:
+      on-profile: debug2
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:mysql://localhost:3306/illegal_parking?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: rudnf12dnjf
+    hikari:
+      connection-timeout: 9000 # connection_timeout
+      max-lifetime: 1800000 # wait_timeout
+      jdbc-url: jdbc:mysql://localhost:3306/illegal_parking?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC
+      username: root
+      password: rudnf12dnjf
+      maximum-pool-size: 30
+server:
+  port: 8080
   servlet:
     context-path: /
     session:
@@ -83,14 +110,14 @@ spring:
     database-platform: org.hibernate.dialect.MariaDB103Dialect
   datasource:
     url: jdbc:mariadb://localhost:3306/illegal_parking?serverTimezone=Asia/Seoul
-    username: wooyoung
-    password: rudnf12dnjf
+    username: root
+    password:
     hikari:
       connection-timeout: 9000 # connection_timeout
       max-lifetime: 1800000 # wait_timeout
       jdbc-url: jdbc:mariadb://localhost:3306/illegal_parking?serverTimezone=Asia/Seoul
-      username: wooyoung
-      password: rudnf12dnjf
+      username: root
+      password:
       maximum-pool-size: 30
 server:
   port: 8090
@@ -110,12 +137,12 @@ spring:
     database-platform: org.hibernate.dialect.MariaDB103Dialect
   datasource:
     url: jdbc:mariadb://49.50.166.205:3306/illegal_parking?serverTimezone=Asia/Seoul
-    username: tera
-    password: tera1234!
+    username: root
+    password:
     hikari:
       jdbc-url: jdbc:mariadb://49.50.166.205:3306/illegal_parking?serverTimezone=Asia/Seoul
-      username: tera
-      password: tera1234!
+      username: root
+      password:
       connection-timeout: 30000 # connection_timeout
       max-lifetime: 1800000 # wait_timeout
 server:
@@ -137,11 +164,11 @@ spring:
   datasource:
     url: jdbc:mariadb://192.168.0.53:3306/illegal_parking?serverTimezone=Asia/Seoul
     username: root
-    password: tera
+    password:
     hikari:
       jdbc-url: jdbc:mariadb://192.168.0.53:3306/illegal_parking?serverTimezone=Asia/Seoul
       username: root
-      password: tera
+      password:
       connection-timeout: 29000 # connection_timeout
       max-lifetime: 2800000 # wait_timeout
 server:

@@ -323,3 +323,6 @@ CREATE TABLE notice
 -- ---------------------------------------------------------------------------------------------------
 
 alter table comment modify Content varchar(100) not null;
+
+-- wV6u1vKFveRmu8fG546qdg==   --->  admin1234
+insert into user (Name, Email, Password, UserCode, Role, IsDel) value ('관리자', 'admin', 'wV6u1vKFveRmu8fG546qdg==', 1234, 2, false);

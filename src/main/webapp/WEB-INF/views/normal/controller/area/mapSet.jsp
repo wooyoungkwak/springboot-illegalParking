@@ -58,9 +58,9 @@
 							</div>
 						</div>
 						<div class="card-body mt-0 pt-0">
-								<%--							<div class="map_wrap">--%>
+<%--							<div class="map_wrap">--%>
 							<div id="drawingMap"></div>
-								<%--							</div>--%>
+<%--							</div>--%>
 						</div>
 					</div>
 
@@ -181,10 +181,10 @@
                 }
 
                 // test .......
-                $('#btnSet').click(async function () {
-                    let opt = $.getManagerData('set');
-					log(opt);
-                });
+                // $('#btnSet').click(async function () {
+                //     let opt = $.getManagerData('set');
+				// 	log(opt);
+                // });
 
                 // 구역 저장 함수
                 $('#btnSet').click(async function () {

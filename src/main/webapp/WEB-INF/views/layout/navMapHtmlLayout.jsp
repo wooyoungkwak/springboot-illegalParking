@@ -32,7 +32,8 @@
                 </div>
             </div>
 
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=55cc3405408d4cfbef37c3a93a5422c4&libraries=services,clusterer,drawing"></script>
+<%--            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=55cc3405408d4cfbef37c3a93a5422c4&libraries=services,clusterer,drawing"></script>--%>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1cc9a69a9f6f861cae2a3b333852a3fb&libraries=services,clusterer,drawing"></script>
             <stripes:layout-component name="javascript"/>
 
         </body>
