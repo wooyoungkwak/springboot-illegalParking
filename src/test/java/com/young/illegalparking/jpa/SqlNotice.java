@@ -30,7 +30,7 @@ import java.util.List;
  * Description :
  */
 
-@ActiveProfiles(value = "debug4")
+@ActiveProfiles(value = "debug-illegal-parking")
 @SpringBootTest(classes = ApplicationTests.class,
         properties = "spring.config.location=file:/C:/Users/user/application.yml")
 @RunWith(SpringRunner.class)
