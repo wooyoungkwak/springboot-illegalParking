@@ -1,9 +1,9 @@
-package com.teraenergy.illegalparking.jpa;
+package com.young.illegalparking.jpa;
 
-import com.teraenergy.illegalparking.ApplicationTests;
-import com.teraenergy.illegalparking.model.entity.lawdong.domain.LawDong;
-import com.teraenergy.illegalparking.model.entity.lawdong.repository.LawDongRepository;
-import com.teraenergy.illegalparking.model.entity.lawdong.service.LawDongService;
+import com.young.illegalparking.ApplicationTests;
+import com.young.illegalparking.model.entity.lawdong.domain.LawDong;
+import com.young.illegalparking.model.entity.lawdong.repository.LawDongRepository;
+import com.young.illegalparking.model.entity.lawdong.service.LawDongService;
 import org.apache.commons.compress.utils.Lists;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;

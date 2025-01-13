@@ -1,15 +1,15 @@
 
-package com.teraenergy.illegalparking.jpa;
+package com.young.illegalparking.jpa;
 
 import com.google.common.collect.Maps;
-import com.teraenergy.illegalparking.model.entity.lawdong.domain.LawDong;
-import com.teraenergy.illegalparking.model.entity.lawdong.service.LawDongService;
-import com.teraenergy.illegalparking.model.entity.pm.domain.Pm;
-import com.teraenergy.illegalparking.model.entity.pm.enums.PmType;
-import com.teraenergy.illegalparking.model.entity.pm.service.PmService;
+import com.young.illegalparking.model.entity.lawdong.domain.LawDong;
+import com.young.illegalparking.model.entity.lawdong.service.LawDongService;
+import com.young.illegalparking.model.entity.pm.domain.Pm;
+import com.young.illegalparking.model.entity.pm.enums.PmType;
+import com.young.illegalparking.model.entity.pm.service.PmService;
 import org.apache.commons.compress.utils.Lists;
 import org.junit.jupiter.api.Test;
-import com.teraenergy.illegalparking.ApplicationTests;
+import com.young.illegalparking.ApplicationTests;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

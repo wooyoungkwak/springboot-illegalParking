@@ -1,4 +1,4 @@
-package com.teraenergy.illegalparking;
+package com.young.illegalparking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -17,10 +17,10 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
  */
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan(basePackages = {"com.teraenergy"}, excludeFilters = {@ComponentScan.Filter(SpringBootApplication.class)})
+@ComponentScan(basePackages = {"com.young"}, excludeFilters = {@ComponentScan.Filter(SpringBootApplication.class)})
 @EntityScan(
         basePackageClasses = {Jsr310JpaConverters.class},
-        basePackages = {"com.teraenergy.illegalparking.model"}
+        basePackages = {"com.young.illegalparking.model"}
 )
 public class ApplicationTests {
 

@@ -1,4 +1,4 @@
-package com.teraenergy.illegalparking.local;
+package com.young.illegalparking.local;
 
 import com.google.common.collect.Maps;
 import org.junit.jupiter.api.Test;

@@ -1,16 +1,16 @@
-package com.teraenergy.illegalparking.jpa;
+package com.young.illegalparking.jpa;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.teraenergy.illegalparking.ApplicationTests;
-import com.teraenergy.illegalparking.model.entity.illegalEvent.domain.IllegalEvent;
-import com.teraenergy.illegalparking.model.entity.illegalEvent.service.IllegalEventService;
-import com.teraenergy.illegalparking.model.entity.illegalGroup.domain.IllegalGroup;
-import com.teraenergy.illegalparking.model.entity.illegalEvent.enums.IllegalType;
-import com.teraenergy.illegalparking.model.entity.illegalzone.enums.LocationType;
-import com.teraenergy.illegalparking.model.entity.illegalzone.repository.IllegalZoneRepository;
-import com.teraenergy.illegalparking.model.entity.illegalGroup.service.IllegalGroupServcie;
-import com.teraenergy.illegalparking.model.entity.illegalzone.service.IllegalZoneService;
+import com.young.illegalparking.ApplicationTests;
+import com.young.illegalparking.model.entity.illegalEvent.domain.IllegalEvent;
+import com.young.illegalparking.model.entity.illegalEvent.service.IllegalEventService;
+import com.young.illegalparking.model.entity.illegalGroup.domain.IllegalGroup;
+import com.young.illegalparking.model.entity.illegalEvent.enums.IllegalType;
+import com.young.illegalparking.model.entity.illegalzone.enums.LocationType;
+import com.young.illegalparking.model.entity.illegalzone.repository.IllegalZoneRepository;
+import com.young.illegalparking.model.entity.illegalGroup.service.IllegalGroupServcie;
+import com.young.illegalparking.model.entity.illegalzone.service.IllegalZoneService;
 import org.apache.commons.compress.utils.Lists;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

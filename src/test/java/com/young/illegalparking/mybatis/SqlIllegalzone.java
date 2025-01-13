@@ -1,15 +1,15 @@
-package com.teraenergy.illegalparking.mybatis;
+package com.young.illegalparking.mybatis;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.teraenergy.illegalparking.ApplicationTests;
-import com.teraenergy.illegalparking.model.entity.illegalEvent.domain.IllegalEvent;
-import com.teraenergy.illegalparking.model.entity.illegalEvent.service.IllegalEventService;
-import com.teraenergy.illegalparking.model.entity.illegalzone.domain.IllegalZone;
-import com.teraenergy.illegalparking.model.entity.illegalzone.service.IllegalZoneMapperService;
-import com.teraenergy.illegalparking.model.entity.illegalzone.service.IllegalZoneService;
-import com.teraenergy.illegalparking.util.StringUtil;
+import com.young.illegalparking.ApplicationTests;
+import com.young.illegalparking.model.entity.illegalEvent.domain.IllegalEvent;
+import com.young.illegalparking.model.entity.illegalEvent.service.IllegalEventService;
+import com.young.illegalparking.model.entity.illegalzone.domain.IllegalZone;
+import com.young.illegalparking.model.entity.illegalzone.service.IllegalZoneMapperService;
+import com.young.illegalparking.model.entity.illegalzone.service.IllegalZoneService;
+import com.young.illegalparking.util.StringUtil;
 import org.apache.commons.compress.utils.Lists;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

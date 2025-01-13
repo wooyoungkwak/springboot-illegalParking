@@ -1,4 +1,4 @@
-package com.teraenergy.illegalparking.local;
+package com.young.illegalparking.local;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
