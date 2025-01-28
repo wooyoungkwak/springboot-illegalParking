@@ -46,3 +46,6 @@ bin/
 /.idea/vcs.xml
 /.log/log4j2.log
 /.log/log4j2_2025-01-13-08.log
+
+### Document ###
+/src/main/resources/doc/
